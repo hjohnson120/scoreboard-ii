@@ -50,7 +50,7 @@ const addOneToScore2 = () => {
   console.log('button was clicked')
   score += 1
   if (score > 21) {
-    document.querySelector('team--add-1-button').disable = true
+    document.querySelector('team-2-add-1-button').disable = true
   }
   updateCounterInHtml2()
 }
@@ -61,6 +61,13 @@ const subtractOneFromScore2 = () => {
     document.querySelector('team-2-subtract-1-button').disable = true
   }
   updateCounterInHtml2()
+}
+
+const resetScores = () => {
+  console.log('button was clicked')
+  score = 0
+  document.querySelector('.scoreChange2').textContent = 0
+  document.querySelector('.scoreChange').textContent = 0
 }
 
 document
@@ -84,3 +91,5 @@ document
 document
   .querySelector('.update-team-2-name')
   .addEventListener('click', updateTeamTwo)
+
+document.querySelector('.reset-button').addEventListener('click', resetScores)
