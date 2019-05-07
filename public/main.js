@@ -68,6 +68,8 @@ const resetScores = () => {
   score = 0
   document.querySelector('.scoreChange2').textContent = 0
   document.querySelector('.scoreChange').textContent = 0
+  document.querySelector('.team1').textContent = 'Team 1'
+  document.querySelector('.team2').textContent = 'Team 2'
 }
 
 document
